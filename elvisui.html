@@ -1,0 +1,107 @@
+<html>
+
+<head>
+    <title>
+        E-learning Site for Blind People
+    </title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/shoelace-css/1.0.0-beta16/shoelace.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/util.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script src="sc.js"></script>
+    <script type="text/javascript">
+        function readOutLoud(message) {
+            var speech = new SpeechSynthesisUtterance();
+
+            // Set the text and voice attributes.
+            speech.text = message;
+            speech.volume = 1;
+            speech.rate = 1;
+            speech.pitch = 1;
+
+            window.speechSynthesis.speak(speech);
+        }
+
+        var mess = "we have 4 services to offer, packages, audio library, gadgets and merchandise.";
+        readOutLoud(mess);
+        var askname = "press key on keyboard and tell which one you want to select ?";
+        readOutLoud(askname);
+    </script>
+
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="container-contact100">
+                <button class="contact100-btn-show" style="width:300px; height:300px;">
+                    <img src="assets/images/voice.png"  title="" style="height: 5rem;">
+                </button>
+            </div>
+
+            <p id="p"></p>
+            <span id='message' style="color:red;"></span>
+            <div id="packages" style="height: 30vh; width: 300px; display: none ; margin: 0px; float: left;">
+                <input id='universitypack' type="checkbox">University package.
+                <br>
+                <input id="schoolpack" type="checkbox">School Package.
+                <br>
+                <input id="primarypack" type="checkbox">Primary Package.
+                <br>
+                <input id="specipack" type="checkbox">Specific Package.
+                <br>
+                <input id="masterpack" type="checkbox">Master's package.
+            </div>
+            <div id="audiolibrary" style="height: 30vh; width: 300px; display: none;  margin: 0px; float: left;">
+                <input id='modules' type="checkbox">Modules.
+                <br>
+                <input id="lectures" type="checkbox">Lectures.
+                <br>
+                <input id="audiobooks" type="checkbox">Audio Books.
+                <br>
+                <input id="personalizedsp" type="checkbox">Personalized Speakers.
+                <br>
+                <input id="motivationalst" type="checkbox">Motivational Stories.
+            </div>
+            <div id="gadgets" style="height: 30vh; width: 300px; display: none;  margin: 0px; float: left;">
+                <input id='braillekey' type="checkbox">Braille Keyboard.
+                <br>
+                <input id="specialmicro" type="checkbox">Specialized Microphone.
+                <br>
+                <input id="hapticsensor" type="checkbox">Haptic Feedback Sensor.
+                <br>
+                <input id="headphone" type="checkbox">Headphone.
+                <br>
+                <input id="elvisradio" type="checkbox">Elvis Radio
+            </div>
+            <div id="merchandise" style="height: 30vh; width: 300px; display: none;  margin: 0px; float: left;">
+                <input id='tshirt' type="checkbox">T-Shirt.
+                <br>
+                <input id="hoddie" type="checkbox">Hoddie.
+                <br>
+                <input id="stickers" type="checkbox">Stickers.
+                <br>
+                <input id="mobcover" type="checkbox">Mobile Cover.
+                <br>
+                <input id="necklace" type="checkbox">Necklace
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script src="sc.js"></script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,96 @@
+html,
+body {
+    background-color: rgb(53, 52, 52);
+    height: 100vh;
+}
+
+.wrapper {
+    width: 100%;
+    background-color: rgb(53, 52, 52);
+}
+
+.container {
+    background: white;
+    width: 930px;
+    height: 640px;
+    margin: 0px auto;
+    border-radius: 12px;
+    margin-top: 70px;
+    position: fixed;
+    left: 20%;
+    margin-bottom: 170px;
+}
+
+.wrapper div {
+    padding: 2.5px;
+}
+
+.contact100-btn-show {
+    color: #fff;
+    font-size: 39px;
+    position: fixed;
+    z-index: -1;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.contact100-btn-show::before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -2;
+    width: 100%;
+    height: 100%;
+    background-color: #ff4b5a;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    box-shadow: 0 10px 30px 0px rgba(255, 75, 90, 0.5);
+    -moz-box-shadow: 0 10px 30px 0px rgba(255, 75, 90, 0.5);
+    -webkit-box-shadow: 0 10px 30px 0px rgba(255, 75, 90, 0.5);
+    -o-box-shadow: 0 10px 30px 0px rgba(255, 75, 90, 0.5);
+    -ms-box-shadow: 0 10px 30px 0px rgba(255, 75, 90, 0.5);
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+    -webkit-animation: beatbtn 0.9s ease-in-out infinite;
+    animation: beatbtn 0.9s ease-in-out infinite;
+}
+
+@keyframes beatbtn {
+    0% {
+        background-color: rgba(255, 75, 90, 1);
+        transform-origin: center;
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+       
+    }
+    50% {
+        background-color: rgba(255, 75, 90, 0.8);
+        transform-origin: center;
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        -o-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+}
