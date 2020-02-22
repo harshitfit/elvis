@@ -1,7 +1,7 @@
 # Elvis
 E-learning site for visually impaired students that uses a web speech API  to interact with human voice.
 
-# ABOUT Elvis
+# About Elvis
 this is a smale scale freelance project that i had been worked on, 
 basically Elvis is a virtual tutor especially develop by me only to meet the requirements of our clients.
 Designing a virtual conversational system is not an easy task but i have done it through web speech API,
